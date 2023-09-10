@@ -1,6 +1,6 @@
-import react from "react";
+import React from "react";
 
-const MenuCard = ({ itemNum, burgerImageSrc, price, title }) => {
+const MenuCard = ({ itemNum, burgerImageSrc, price, title, handler}) => {
   return (
     <div>
       <div>Item {itemNum}</div>
@@ -10,6 +10,8 @@ const MenuCard = ({ itemNum, burgerImageSrc, price, title }) => {
         <h5>₹ {price}</h5>
 
         <p>{title}</p>
+
+        <button onClick={() => handler(itemNum)}>Buy Now</button>
       </menu>
     </div>
   );

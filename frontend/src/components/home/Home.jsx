@@ -1,6 +1,7 @@
 import React from "react";
 import { delay, motion } from "framer-motion";
 import Founder from "./Founder";
+import Menu from "./Menu";
 
 const Home = () => {
   const options = {
@@ -43,6 +44,8 @@ const Home = () => {
       </section>
 
       <Founder />
+
+      <Menu />
     </>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
 
-const MenuCard = ({ itemNum, burgerImageSrc, price, title, handler}) => {
+const MenuCard = ({ itemNum, burgerImageSrc, price, title, handler }) => {
   return (
-    <div>
+    <div className="menuCard">
       <div>Item {itemNum}</div>
-      <menu>
+      <main>
         <img src={burgerImageSrc} alt={itemNum} />
 
         <h5>₹ {price}</h5>
@@ -12,7 +12,7 @@ const MenuCard = ({ itemNum, burgerImageSrc, price, title, handler}) => {
         <p>{title}</p>
 
         <button onClick={() => handler(itemNum)}>Buy Now</button>
-      </menu>
+      </main>
     </div>
   );
 };

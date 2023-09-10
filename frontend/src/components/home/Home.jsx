@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/home.scss";
 import { delay, motion } from "framer-motion";
 import Founder from "./Founder";
 
@@ -42,7 +41,7 @@ const Home = () => {
           Explore Menu
         </motion.a>
       </section>
-      
+
       <Founder />
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { delay, motion } from "framer-motion";
 import Founder from "./Founder";
 import Menu from "./Menu";
+import Footer from "../layouts/Footer";
 
 const Home = () => {
   const options = {
@@ -46,6 +47,8 @@ const Home = () => {
       <Founder />
 
       <Menu />
+
+      <Footer />
     </>
   );
 };

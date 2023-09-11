@@ -1,23 +1,62 @@
 import React from "react";
 import { motion } from "framer-motion";
-import burger1 from "../../assets/burger1.png"
+import burger1 from "../../assets/burger1.png";
 
 const Contact = () => {
   return (
     <section className="contact">
-      <motion.form >
+      <motion.form
+        initial={{
+          x: "-100vh",
+          opacity: 0,
+        }}
+        animate={{
+          x: "0",
+          opacity: 1,
+        }}
+        transition={{ delay: 0.2 }}
+      >
         <h2>Contact Us</h2>
-        
+
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
-        <textarea placeholder="Type your Message here ..." id="" cols="30" rows="10"></textarea>
+        <textarea
+          placeholder="Type your Message here ..."
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
         <button type="submit">Send</button>
       </motion.form>
 
       {/* extended form css */}
-      <motion.div className="formBorder">
-        <motion.div>
-            <img src={burger1} alt="burger1" />
+      <motion.div
+        className="formBorder"
+        initial={{
+          x: "100vh",
+          opacity: 0,
+        }}
+        animate={{
+          x: "0",
+          opacity: 1,
+        }}
+        transition={{ delay: 0.2 }}
+      >
+        <motion.div
+        initial={{
+            y:"-100vh",
+            x: "50%",
+            opacity:0,
+        }}
+        animate= {{
+            y:"-50%",
+            x:"50%",
+            opacity:1,
+        }}
+        transition={{delay:1}}
+        
+        >
+          <img src={burger1} alt="burger1" />
         </motion.div>
       </motion.div>
     </section>

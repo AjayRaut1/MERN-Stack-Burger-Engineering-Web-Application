@@ -13,6 +13,7 @@ import OrderDetails from "./components/myOrders/OrderDetails"
 import DashBoard from "./components/admin/DashBoard"
 import Users from "./components/admin/Users"
 import Orders from "./components/admin/Orders"
+import About from "./components/about/About"
 
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -30,6 +31,7 @@ import "./styles/profile.scss";
 import "./styles/table.scss";
 import "./styles/orderDetails.scss";
 import "./styles/dashboard.scss";
+import "./styles/about.scss";
 
 function App() {
   return <Router>
@@ -48,6 +50,7 @@ function App() {
       <Route path="/admin/dashboard" element={<DashBoard />} />
       <Route path="/admin/users" element={<Users />} />
       <Route path="/admin/orders" element={<Orders />} />
+      <Route path="/about" element={<About />} />
     </Routes>
     
   </Router>

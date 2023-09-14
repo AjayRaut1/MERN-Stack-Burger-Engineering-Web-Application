@@ -11,6 +11,7 @@ import Profile from "./components/profile/Profile"
 import MyOrders from "./components/myOrders/MyOrders"
 import OrderDetails from "./components/myOrders/OrderDetails"
 import DashBoard from "./components/admin/DashBoard"
+import Users from "./components/admin/Users"
 
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -44,6 +45,7 @@ function App() {
       <Route path="/myorders" element={<MyOrders />} />
       <Route path="/order/:id" element={<OrderDetails />} />
       <Route path="/admin/dashboard" element={<DashBoard />} />
+      <Route path="/admin/users" element={<Users />} />
     </Routes>
     
   </Router>

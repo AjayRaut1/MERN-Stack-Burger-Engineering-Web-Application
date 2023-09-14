@@ -14,6 +14,7 @@ import DashBoard from "./components/admin/DashBoard"
 import Users from "./components/admin/Users"
 import Orders from "./components/admin/Orders"
 import About from "./components/about/About"
+import NotFound from "./components/layouts/NotFound.jsx"
 
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -51,6 +52,7 @@ function App() {
       <Route path="/admin/users" element={<Users />} />
       <Route path="/admin/orders" element={<Orders />} />
       <Route path="/about" element={<About />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
     
   </Router>

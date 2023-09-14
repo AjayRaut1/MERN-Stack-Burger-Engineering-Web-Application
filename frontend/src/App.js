@@ -10,6 +10,7 @@ import Login from "./components/login/Login"
 import Profile from "./components/profile/Profile"
 import MyOrders from "./components/myOrders/MyOrders"
 import OrderDetails from "./components/myOrders/OrderDetails"
+import DashBoard from "./components/admin/DashBoard"
 
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -26,6 +27,7 @@ import "./styles/login.scss";
 import "./styles/profile.scss";
 import "./styles/table.scss";
 import "./styles/orderDetails.scss";
+import "./styles/dashboard.scss";
 
 function App() {
   return <Router>
@@ -41,6 +43,7 @@ function App() {
       <Route path="/me" element={<Profile />} />
       <Route path="/myorders" element={<MyOrders />} />
       <Route path="/order/:id" element={<OrderDetails />} />
+      <Route path="/admin/dashboard" element={<DashBoard />} />
     </Routes>
     
   </Router>

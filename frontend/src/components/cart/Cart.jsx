@@ -29,21 +29,21 @@ const Cart = () => {
         <CartItem
           title={"VEG CHEESE BURGER"}
           img={burger1}
-          value={1}
+          value={0}
           increment={() => increment(1)}
           decrement={() => decrement(1)}
         />
         <CartItem
           title={"JUMBO VEG CHEESE BURGER"}
           img={burger2}
-          value={2}
+          value={0}
           increment={() => increment(2)}
           decrement={() => decrement(2)}
         />
         <CartItem
           title={"CHEESE BURGER WITH FRENCH FRIES"}
           img={burger3}
-          value={3}
+          value={0}
           increment={() => increment(3)}
           decrement={() => decrement(3)}
         />
